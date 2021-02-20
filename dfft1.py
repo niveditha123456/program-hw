@@ -2,8 +2,11 @@ import numpy as np;
 import cmath;
 from matplotlib import pyplot as plt
 a=np.pi
+n=np.arange(0,500)
 w=np.arange(-a,a,0.01*a)
-x=[1,2,3,4]
+F=1000
+fs=150
+x=np.cos(2*np.pi*F/fs*n)
 y=[]
 for n in range(0,len(w)):
 	s=0
@@ -19,4 +22,3 @@ plt.show()
 
 	
 	
-
